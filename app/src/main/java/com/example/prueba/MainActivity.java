@@ -53,9 +53,9 @@ public class MainActivity extends Activity {
                     break;
                 case R.id.optExponencia:
                     respuesta = (Math.pow(num1,num2));
-               case R.id.optFactoreo:
+              // case R.id.optFactoreo:
                    // long factorial= 1;
-                    respuesta = num1 + num2 * factorial;
+                   // respuesta = num1 + num2 * factorial;
             }
 
           //  long factorial= 1;
@@ -79,9 +79,8 @@ public class MainActivity extends Activity {
                     respuesta= num1*num2/porcentaje;
                 case 7: //Exponencia.
                     respuesta = (Math.pow(num1,num2));
-                 case 8: //Factoreo.
-
-                   respuesta = num1 + num2 ;
+                 //case 8: //Factoreo.
+                    // respuesta = num1 + num2 ;
 
             }
 
