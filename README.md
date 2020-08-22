@@ -1,3 +1,3 @@
 # ProgramacionIII
-(El primer Proyecto es la calculadora, pero sale con otro nombre por error de dedo espero Comprenda)
+(El primer Proyecto Es solamente de Prueba)
 Tareas de  Programacion Computacional III
