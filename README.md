@@ -1,2 +1,3 @@
 # ProgramacionIII
-Codigos de Ejmplo de la catedra de Programacion Computacional III
+(El primer Proyecto es la calculadora, pero sale con otro nombre por error de dedo espero Comprenda)
+Tareas de  Programacion Computacional III
