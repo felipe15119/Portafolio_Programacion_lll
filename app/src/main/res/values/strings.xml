@@ -1,14 +1,4 @@
 <resources>
-        <string name="app_name">Calculadora</string>
-    <string-array name="operaciones">
-        <item>Seleccione un elemento</item>
-        <item>Suma</item>
-        <item>Resta</item>
-        <item>Multiplicacion</item>
-        <item>Division</item>
-        <item>Residuo</item>
-        <item>Porcentaje</item>
-        <item>Exponencia</item>
-        <item>Factoreo</item>
-    </string-array>
+        <string name="app_name">Convertidores</string>
+
 </resources>
