@@ -1,4 +1,120 @@
 <resources>
         <string name="app_name">Convertidores</string>
+        <string name="Button1">CONVERTIR MONEDAS Y LONGITUD</string>
+        <string name="Button2">CONVERTIR MASA Y TIEMPO</string>
+        <string name="Button3">CONVERTIR ALMACENAMIENTO Y VOLUMEN</string>
+        <string name="Button4">CONVERTIR TRANSFERENCIA DE DATOS</string>
+
+
+        <string-array name="Monedas">
+                <item>Dólar Estadounidense</item>
+                <item>Euro</item>
+                <item>Quetzal Guatemalteco</item>
+                <item>Lempira Hondureña</item>
+                <item>Cordoba</item>
+                <item>Colón Salvadoreño</item>
+                <item>Peso Mexicano</item>
+                <item>Boliviano</item>
+                <item>Peso Chileno</item>
+                <item>Peso Colombiano</item>
+                <item>Rublo</item>
+                <item>Dolar Australiano</item>
+                <item>Dólar Canadiense</item>
+                <item>Yen Japonés</item>
+                <item>Guaraní</item>
+                <item>Rupia</item>
+                <item>Peso Uruguayo</item>
+        </string-array>
+
+        <string-array name="Longitud">
+                <item>Metro</item>
+                <item>Kilometro</item>
+                <item>Centimetro</item>
+                <item>Milímetro</item>
+                <item>Micrómetro</item>
+                <item>Nanómetro</item>
+                <item>Milla</item>
+                <item>Yarda</item>
+                <item>Pie</item>
+                <item>Pulgada</item>
+                <item>Milla Naútica</item>
+        </string-array>
+
+        <string-array name="Masa">
+                <item>Libra</item>
+                <item>Tonelada</item>
+                <item>Kilogramo</item>
+                <item>Gramo</item>
+                <item>Miligramo</item>
+                <item>Microgramo</item>
+                <item>Tonelada Larga</item>
+                <item>Tonelada Corta</item>
+                <item>Quintal Largo</item>
+                <item>Quintal Corto</item>
+                <item>Onza</item>
+        </string-array>
+
+        <string-array name="Tiempo">
+                <item>Segundo</item>
+                <item>Nanosegundo</item>
+                <item>Microsegundo</item>
+                <item>Milisegundo</item>
+                <item>Minuto</item>
+                <item>Hora</item>
+                <item>Día</item>
+                <item>Semana</item>
+                <item>Mes</item>
+                <item>Año</item>
+                <item>Década</item>
+                <item>Siglo</item>
+        </string-array>
+
+        <string-array name="Almacenamiento">
+                <item>Bit</item>
+                <item>Byte</item>
+                <item>Kilobit</item>
+                <item>Megabit</item>
+                <item>Gigabit</item>
+                <item>Terabit</item>
+                <item>Petabit</item>
+                <item>Kilobyte</item>
+                <item>Megabyte</item>
+                <item>Gigabyte</item>
+                <item>Terabyte</item>
+        </string-array>
+
+        <string-array name="Volumen">
+                <item>Galón estadounidense</item>
+                <item>Cuarto estadounidense</item>
+                <item>Pinta estadounidense</item>
+                <item>Taza americana oficial</item>
+                <item>Onza líquida estadounidense</item>
+                <item>Cucharada estadounidense</item>
+                <item>Cucharadita estadounidense</item>
+                <item>Metro Cúbico</item>
+                <item>Litro</item>
+                <item>Mililitro</item>
+                <item>Galón imperial</item>
+                <item>Cuarto imperial</item>
+                <item>Pinta imperial</item>
+                <item>Taza imperial</item>
+                <item>Onza líquida imperial</item>
+                <item>Cucharada imperial</item>
+                <item>Cucharadita imperial</item>
+                <item>Pie cúbico</item>
+                <item>Pulgada cúbica</item>
+        </string-array>
+
+        <string-array name="Transferenciadedatos">
+                <item>Bit por segundo</item>
+                <item>Kilobit por segundo</item>
+                <item>Kilobyte por segundo</item>
+                <item>Megabit por segundo</item>
+                <item>Megabyte por segundo</item>
+                <item>Gigabit por segundo</item>
+                <item>Gigabyte por segundo</item>
+                <item>Terabit por segundo</item>
+                <item>Terabyte por segundo</item>
+        </string-array>
 
 </resources>

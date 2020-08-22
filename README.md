@@ -1,2 +1,2 @@
 # ProgramacionIII
-Codigos de Ejmplo de la catedra de Programacion Computacional III
+Codigo de Los Convertidores de Programacion Computacional III

@@ -4,8 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
     tools:context=".MainActivity"
    >
 
+    <Button
+        android:id="@+id/btMonedas_Longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/Button1" />
+
+    <Button
+        android:id="@+id/btMasa_Tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/Button2" />
+
+    <Button
+        android:id="@+id/btAlmacenamiento_Volumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/Button3" />
+
+    <Button
+        android:id="@+id/btTransferencias_Datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="440dp"
+        android:text="@string/Button4" />
 </RelativeLayout>
