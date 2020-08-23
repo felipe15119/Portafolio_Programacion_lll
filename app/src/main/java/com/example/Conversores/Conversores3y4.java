@@ -24,9 +24,9 @@ TabHost tbhConvertidor;
 
     }
 
-    public void Calcular (View view){
+    public void Calcular3y4 (View view){
         try {
-            TextView tmpVal = (TextView) findViewById(R.id.txtCantidad);
+            TextView tmpVal = (TextView) findViewById(R.id.txtCantidad3y4);
             double cantidad = Double.parseDouble(tmpVal.getText().toString());
 
             Spinner spn;
