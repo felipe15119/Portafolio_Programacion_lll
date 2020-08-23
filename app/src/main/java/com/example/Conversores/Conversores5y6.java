@@ -17,16 +17,19 @@ TabHost tbhConvertire;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversores5y6);
+
+
+
         tbhConvertire=(TabHost)findViewById(R.id.thbconversor5y6);
         tbhConvertire.setup();
         tbhConvertire.addTab(tbhConvertire.newTabSpec("A").setContent(R.id.tbAlmacenamiento).setIndicator("ALMACENAMIENTO")); //almacenamiento
         tbhConvertire.addTab(tbhConvertire.newTabSpec("V").setContent(R.id.tbhVolumen).setIndicator("VOLUMEN")); //volumne
     }
 
-    public void Calcular3y4 (View view){
+    public void Calcular5y6 (View view){
         try {
-            TextView tmpVal = (TextView) findViewById(R.id.txtCantidad3y4);
-            double cantidad = Double.parseDouble(tmpVal.getText().toString());
+            TextView tmpVal = (TextView) findViewById(R.id.txtcantidad5y6);
+            double cantidad5y6 = Double.parseDouble(tmpVal.getText().toString());
 
             Spinner spn;
             double valores[][]={
@@ -39,18 +42,18 @@ TabHost tbhConvertire;
             switch (tbhConvertire.getCurrentTabTag()) {
 
                 case "A":
-                    spn = (Spinner) findViewById(R.id.spde);
+                    spn = (Spinner) findViewById(R.id.cboDEA);
                     de = spn.getSelectedItemPosition();
-                    spn = (Spinner) findViewById(R.id.spa);
+                    spn = (Spinner) findViewById(R.id.cboAA);
                     a = spn.getSelectedItemPosition();
-                    resp = valores[0][a] / valores[0][de] * cantidad;
+                    resp = valores[0][a] / valores[0][de] * cantidad5y6;
                     break;
                 case "V":
-                    spn = (Spinner) findViewById(R.id.spdev);
+                    spn = (Spinner) findViewById(R.id.cboDEV);
                     de = spn.getSelectedItemPosition();
-                    spn = (Spinner) findViewById(R.id.spav);
+                    spn = (Spinner) findViewById(R.id.cboAV);
                     a = spn.getSelectedItemPosition();
-                    resp = valores[1][a] / valores[1][de] * cantidad;
+                    resp = valores[1][a] / valores[1][de] * cantidad5y6;
                     break;
 
             }

@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Conversor7">
-
-
+    tools:context="com.example.Conversores.MainActivity2">
 
     <TabHost
         android:id="@+id/tbhConvertir7"
@@ -78,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <EditText
-            android:id="@+id/txtCantidad"
+            android:id="@+id/txtCantidad7"
             android:layout_marginTop="400dp"
             android:layout_marginLeft="100dp"
             android:hint="Cantidad a convertir"
@@ -92,10 +90,10 @@
             android:layout_marginLeft="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="calcular"
-            tools:ignore="OnClick" />
+            android:onClick="Calcular7"
+             />
         <TextView
-            android:id="@+id/lblrespuesta"
+            android:id="@+id/lblrespuesta7"
             android:text="Respuesta: ?"
             android:layout_marginTop="550dp"
             android:layout_marginLeft="100dp"

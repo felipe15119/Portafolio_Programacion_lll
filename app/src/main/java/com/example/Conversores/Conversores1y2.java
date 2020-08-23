@@ -24,7 +24,7 @@ TabHost tbhConvertir;
 
     }
 
-    public void Calcular (View view){
+    public void calcular (View view){
         try {
         TextView tmpVal = (TextView) findViewById(R.id.txtCantidad);
         double cantidad = Double.parseDouble(tmpVal.getText().toString());

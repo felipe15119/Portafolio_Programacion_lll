@@ -17,7 +17,7 @@ TabHost tbhConvertidor;
         setContentView(R.layout.activity_conversores3y4);
 
 
-        tbhConvertidor=(TabHost)findViewById(R.id.tbhConvertir1y2);
+        tbhConvertidor=(TabHost)findViewById(R.id.tbhConvertir3y4);
         tbhConvertidor.setup();
         tbhConvertidor.addTab(tbhConvertidor.newTabSpec("MA").setContent(R.id.tabMasa).setIndicator("MASA")); //Masa
         tbhConvertidor.addTab(tbhConvertidor.newTabSpec("T").setContent(R.id.tabTiempo).setIndicator("TIEMPO")); //Tiempo

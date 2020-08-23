@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Transferencias(View view) {
-        Intent intento4 = new Intent(this, Conversor7.class);
+        Intent intento4 = new Intent(this, MainActivity2.class);
         startActivity(intento4);
     }
 }

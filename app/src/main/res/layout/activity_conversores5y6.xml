@@ -34,7 +34,7 @@
                     android:orientation="vertical">
 
                     <Spinner
-                        android:id="@+id/spde"
+                        android:id="@+id/cboDEA"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
@@ -42,7 +42,7 @@
                         android:entries="@array/Almacenamiento" />
 
                     <Spinner
-                        android:id="@+id/spa"
+                        android:id="@+id/cboAA"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
@@ -50,7 +50,7 @@
                         android:entries="@array/Almacenamiento" />
 
                     <TextView
-                        android:id="@+id/tva"
+                        android:id="@+id/lblAA"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
@@ -58,7 +58,7 @@
                         android:text="A:" />
 
                     <TextView
-                        android:id="@+id/tvde"
+                        android:id="@+id/lblDEA"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
@@ -74,7 +74,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvdev"
+                        android:id="@+id/lblDEV"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
@@ -82,7 +82,7 @@
                         android:text="De:" />
 
                     <Spinner
-                        android:id="@+id/spdev"
+                        android:id="@+id/cboDEV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:entries="@array/Volumen"
@@ -90,7 +90,7 @@
                         android:layout_marginLeft="100dp" />
 
                     <TextView
-                        android:id="@+id/tvav"
+                        android:id="@+id/lblAV"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
@@ -98,7 +98,7 @@
                         android:text="A:" />
 
                     <Spinner
-                        android:id="@+id/spav"
+                        android:id="@+id/cboAV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:entries="@array/Volumen"
@@ -121,18 +121,18 @@
 
     <Button
         android:id="@+id/btncalcular5y6"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="500dp"
-        android:layout_marginRight="150dp"
-        android:text="Calcular" />
+        android:text="Calcular"
+        android:onClick="Calcular5y6"/>
     <TextView
         android:id="@+id/lblrespuesta5y6"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="580dp"
         android:text="Respuesta:"
         android:layout_marginLeft="150dp"
-        android:layout_marginRight="150dp"/>
+        />
 </RelativeLayout>

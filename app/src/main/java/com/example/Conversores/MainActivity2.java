@@ -1,5 +1,7 @@
 package com.example.Conversores;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
@@ -7,27 +9,25 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class Conversor7 extends AppCompatActivity {
-TabHost tbhconvertir;
+public class MainActivity2 extends AppCompatActivity {
+    TabHost tbhconvertir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conversor7);
+        setContentView(R.layout.activity_main2);
 
 
 
-        tbhconvertir=(TabHost)findViewById(R.id.tbhConvertir1y2);
+        tbhconvertir=(TabHost)findViewById(R.id.tbhConvertir7);
         tbhconvertir.setup();
         tbhconvertir.addTab(tbhconvertir.newTabSpec("TD").setContent(R.id.tabTransferencia_Datos).setIndicator("TRANSFERENCIA DE DATOS")); //Tranferencia de Datos.......
 
     }
 
-    public void Calcular (View view){
+    public void Calcular7 (View view){
         try {
-            TextView tmpVal = (TextView) findViewById(R.id.txtCantidad);
-            double cantidad = Double.parseDouble(tmpVal.getText().toString());
+            TextView tmpVal = (TextView) findViewById(R.id.txtCantidad7);
+            double Cantidad7 = Double.parseDouble(tmpVal.getText().toString());
 
 
             Spinner spn;
@@ -45,15 +45,15 @@ TabHost tbhconvertir;
                     de = spn.getSelectedItemPosition();
                     spn = (Spinner) findViewById(R.id.cboATransferencia_Datos);
                     a = spn.getSelectedItemPosition();
-                    resp = valores[0][a] / valores[0][de] * cantidad;
+                    resp = valores[0][a] / valores[0][de] * Cantidad7;
                     break;
 
 
             }
-            tmpVal = (TextView) findViewById(R.id.lblrespuesta);
+            tmpVal = (TextView) findViewById(R.id.lblrespuesta7);
             tmpVal.setText("Respuesta: " + resp);
         }catch (Exception err){
-            TextView temp = (TextView) findViewById(R.id.lblrespuesta);
+            TextView temp = (TextView) findViewById(R.id.lblrespuesta7);
             temp.setText("Porfavor Ingrese solo Numeros.");
 
             Toast.makeText(getApplicationContext(),"Por Favor Ingrese Solamente Numeros", Toast.LENGTH_LONG).show();
