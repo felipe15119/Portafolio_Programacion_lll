@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Masita(View view) {
-        Intent intento1 = new Intent(this, Conversores3y4.class);
-        startActivity(intento1);
-    }
-
-    public void AlmaVolu(View view) {
-        Intent intento2 = new Intent(this, Conversores5y6.class);
+        Intent intento2 = new Intent(this, Conversores3y4.class);
         startActivity(intento2);
     }
 
-    public void Transferencias(View view) {
-        Intent intento3 = new Intent(this, Conversor7.class);
+    public void AlmaVolu(View view) {
+        Intent intento3 = new Intent(this, Conversores5y6.class);
         startActivity(intento3);
+    }
+
+    public void Transferencias(View view) {
+        Intent intento4 = new Intent(this, Conversor7.class);
+        startActivity(intento4);
     }
 }

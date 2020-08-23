@@ -7,6 +7,7 @@
     tools:context=".Conversor7">
 
 
+
     <TabHost
         android:id="@+id/tbhConvertir7"
         android:layout_width="match_parent"
@@ -22,45 +23,51 @@
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-                />
+                android:background="#3AAEE3" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RelativeLayout
                     android:id="@+id/tabTransferencia_Datos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#80E4F1"
                     android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/lblDeTransferencia_Datos"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+
                     <Spinner
                         android:id="@+id/cboDeTransferencia_Datos"
-                        android:layout_marginTop="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
-                        android:entries="@array/Transferenciadedatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/lblATransferencia_Datos"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Transferenciadedatos" />
+
                     <Spinner
                         android:id="@+id/cboATransferencia_Datos"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Transferenciadedatos"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Transferenciadedatos" />
+
+                    <TextView
+                        android:id="@+id/lblATransferencia_Datos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
+                    <TextView
+                        android:id="@+id/lblDeTransferencia_Datos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
                 </RelativeLayout>
             </FrameLayout>
         </LinearLayout>

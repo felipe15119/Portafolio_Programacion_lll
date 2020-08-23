@@ -19,8 +19,8 @@ TabHost tbhConvertidor;
 
         tbhConvertidor=(TabHost)findViewById(R.id.tbhConvertir1y2);
         tbhConvertidor.setup();
-        tbhConvertidor.addTab(tbhConvertidor.newTabSpec("MA").setContent(R.id.tabMasa).setIndicator("MASA")); //Monedas
-        tbhConvertidor.addTab(tbhConvertidor.newTabSpec("T").setContent(R.id.tabTiempo).setIndicator("TIEMPO")); //Longitud
+        tbhConvertidor.addTab(tbhConvertidor.newTabSpec("MA").setContent(R.id.tabMasa).setIndicator("MASA")); //Masa
+        tbhConvertidor.addTab(tbhConvertidor.newTabSpec("T").setContent(R.id.tabTiempo).setIndicator("TIEMPO")); //Tiempo
 
     }
 
@@ -31,8 +31,8 @@ TabHost tbhConvertidor;
 
             Spinner spn;
             double valores[][]={
-                    new double[]{1, 0.00045359, 0.4535923, 453.5923, 453592.37, 0.00000004535923, 0.0004464286, 0.0005, 0.0089285714, 0.01, 16}, //masa
-                    new double[]{1, 1000000000, 1000000, 1000, 0.0166666667, 0.0002777778, 0.0000115741, 0.0000016534, 0.0000003802570, 0.00000003168808, 0.000000003169, 0.0000000003169}, //Tiempo
+                    new double[]{1, 0.000453592, 0.453592, 453.592, 453592, 4.536e+8, 0.000446429, 0.0005, 0.0089285714, 0.01, 16}, //masa corregido
+                    new double[]{1, 1e+9, 1e+6, 1000, 0.0166667, 0.000277778, 1.1574e-5, 1.6534e-6, 3.8052e-7, 3.171e-8, 3.171e-9, 3.171e-10}, //Tiempo corregido
 
             };
             int de = 0, a = 0;
