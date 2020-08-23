@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="00dp"
         android:layout_marginTop="200dp"
-        android:text="@string/Button1" />
+        android:text="@string/Button1"
+        android:onClick="Monedas"/>
 
     <Button
         android:id="@+id/btMasa_Tiempo"
@@ -22,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="00dp"
         android:layout_marginTop="280dp"
-        android:text="@string/Button2" />
+        android:text="@string/Button2"
+        android:onClick="Masita"/>
 
     <Button
         android:id="@+id/btAlmacenamiento_Volumen"
@@ -31,7 +33,8 @@
         android:layout_marginLeft="00dp"
         android:layout_marginTop="360dp"
         android:layout_marginRight="00dp"
-        android:text="@string/Button3" />
+        android:text="@string/Button3"
+        android:onClick="AlmaVolu"/>
 
     <Button
         android:id="@+id/btTransferencias_Datos"
@@ -40,7 +43,8 @@
         android:layout_marginLeft="00dp"
         android:layout_marginTop="440dp"
         android:layout_marginRight="00dp"
-        android:text="@string/Button4" />
+        android:text="@string/Button4"
+        android:onClick="Transferencias"/>
 
     <ImageView
         android:id="@+id/imageView2"

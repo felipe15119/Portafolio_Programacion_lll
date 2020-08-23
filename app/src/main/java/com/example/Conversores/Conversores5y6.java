@@ -19,8 +19,8 @@ TabHost tbhConvertire;
         setContentView(R.layout.activity_conversores5y6);
         tbhConvertire=(TabHost)findViewById(R.id.thbconversor5y6);
         tbhConvertire.setup();
-        tbhConvertire.addTab(tbhConvertire.newTabSpec("A").setContent(R.id.tbAlmacenamiento).setIndicator("ALMACENAMIENTO"));
-        tbhConvertire.addTab(tbhConvertire.newTabSpec("V").setContent(R.id.tbhVolumen).setIndicator("VOLUMEN"));
+        tbhConvertire.addTab(tbhConvertire.newTabSpec("A").setContent(R.id.tbAlmacenamiento).setIndicator("ALMACENAMIENTO")); //almacenamiento
+        tbhConvertire.addTab(tbhConvertire.newTabSpec("V").setContent(R.id.tbhVolumen).setIndicator("VOLUMEN")); //volumne
     }
 
     public void Calcular3y4 (View view){
@@ -30,7 +30,7 @@ TabHost tbhConvertire;
 
             Spinner spn;
             double valores[][]={
-                    new double[]{1, 13, 0.000977, 0.000000954, 0.000000000931, 0.000000000000909, 0.000000000000000888, 0.000122, 0.000000119, 0.000000000116, 0.000000000000000111}, //Almacenamiento
+                    new double[]{1, 0.125, 0.008, 8e-6, 8e-9, 8e-12, 8e-15, 0.001, 1e-6, 1e-9, 1e-12}, //Almacenamiento corregido
                     new double[]{1, 4, 8, 15.7725, 128, 256, 768, 0.00378541, 3.78541, 3785.41, 0.832674, 3.3307, 6.66139, 13.3228, 133.228, 213.165, 639.494, 0.133681, 231}, //Volumen...
 
             };
