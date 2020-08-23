@@ -21,50 +21,57 @@
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-                />
+                android:background="#3949AB" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RelativeLayout
                     android:id="@+id/tabMasa"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#7986CB"
                     android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/lblDeMa"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+
                     <Spinner
                         android:id="@+id/cboDeMa"
-                        android:layout_marginTop="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
-                        android:entries="@array/Masa"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/lblAMa"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Masa" />
+
                     <Spinner
                         android:id="@+id/cboAMa"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Masa"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Masa" />
+
+                    <TextView
+                        android:id="@+id/lblAMa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
+                    <TextView
+                        android:id="@+id/lblDeMa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/tabTiempo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#7986CB"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/lblDeT"
@@ -110,7 +117,8 @@
             android:layout_marginLeft="100dp"
             android:hint="Cantidad a convertir"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
         <Button
             android:id="@+id/btnCalcular3y4"
             android:text="Calcular"
@@ -118,7 +126,7 @@
             android:layout_marginLeft="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="calcular"
+            android:onClick="Calcular3y4"
             tools:ignore="OnClick" />
         <TextView
             android:id="@+id/lblrespuesta"

@@ -21,51 +21,58 @@
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-                />
+                android:background="#3949AB" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RelativeLayout
                     android:id="@+id/tabMoneda"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#7986cb"
                     android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/lblDeM"
-                        android:text="DE:"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+
                     <Spinner
                         android:id="@+id/cboDeM"
-                        android:layout_marginTop="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
-                        android:entries="@array/Monedas"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/lblAM"
-                        android:text="A:"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_marginTop="40dp"
+                        android:entries="@array/Monedas" />
+
                     <Spinner
                         android:id="@+id/cboAM"
-                        android:layout_marginTop="90dp"
-                        android:layout_marginLeft="100dp"
-                        android:entries="@array/Monedas"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/Monedas" />
+
+                    <TextView
+                        android:id="@+id/lblAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="90dp"
+                        android:text="A:" />
+
+                    <TextView
+                        android:id="@+id/lblDeM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DE:" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/tabLongitud"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="#7986CB">
                     <TextView
                         android:id="@+id/lblDeL"
                         android:text="DE:"
@@ -110,7 +117,8 @@
             android:layout_marginLeft="100dp"
             android:hint="Cantidad a convertir"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
         <Button
             android:id="@+id/btnCalcular"
             android:text="Calcular"

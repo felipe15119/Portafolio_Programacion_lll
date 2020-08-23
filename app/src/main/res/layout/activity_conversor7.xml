@@ -23,7 +23,7 @@
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-                android:background="#3AAEE3" />
+                android:background="#3949AB" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -34,7 +34,7 @@
                     android:id="@+id/tabTransferencia_Datos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#80E4F1"
+                    android:background="#7986cb"
                     android:orientation="vertical">
 
                     <Spinner
@@ -83,7 +83,8 @@
             android:layout_marginLeft="100dp"
             android:hint="Cantidad a convertir"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
         <Button
             android:id="@+id/btnCalcular"
             android:text="Calcular"
