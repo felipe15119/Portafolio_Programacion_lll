@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             Spinner spn;
             double valores[][]={
-                    new double[]{1, 0.001, 0.000125, 0.000001, 0.000000125, 0.000000001, 0.000000000125, 0.000000000001, 0.000000000000125} //Transferencia de Datos
+                    new double[]{1, 0.001, 0.000125, 1e-6, 1.25e-7, 1e-9, 1.25e-10, 1e-12, 1.25e-13} //Transferencia de Datos arreglado
             };
 
 
