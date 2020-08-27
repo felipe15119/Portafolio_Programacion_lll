@@ -1,2 +1,2 @@
 # ProgramacionIII
-Codigo de Los Convertidores de Programacion Computacional III
+Codigo de La Calculadora de Programacion Computacional III
