@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Calculadora</string>
-    </resources>
+
+    <string name="num1"> Numero 1</string>
+    <string name="num2"> Numero 2</string>
+    <string name="boton"> Procesar </string>
+
+    <string-array name="operaciones">
+        <item>Seleccione un elemento</item>
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+        <item>Porcentaje</item>
+        <item>Modulo</item>
+        <item>Exponenciacion</item>
+        <item>Factoreo</item>
+    </string-array>
+
+</resources>
