@@ -5,150 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  android:background="@drawable/wall"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/btnprocesar"
-        android:layout_width="124dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="250dp"
-        android:onClick="procesar"
-        android:text="@string/boton"
-        />
-
     <TextView
-        android:id="@+id/lblnum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="100dp"
-        android:background="#00F4EBEB"
-        android:text="@string/num2"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/lblnum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="30dp"
-        android:background="#00F3EBEB"
-        android:text="@string/num1"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/txtnum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese Un Numero"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"/>
-
-    <EditText
-        android:id="@+id/txtnum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese un Numero"
-        android:textColorHint="#FFFFFF"
-        android:textColor="#FFFFFF"
-        android:shadowColor="#FFFFFF"/>
-
-    <TextView
-        android:id="@+id/lblresp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="210dp"
-        android:text="Procesar..."
-        android:textColor="#FFFFFF" />
-
-    <RadioGroup
-        android:id="@+id/optOperaciones"
+        android:id="@+id/lblSensorProximidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="140dp">
-
-        <RadioButton
-            android:id="@+id/optSuma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Suma"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optResta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resta"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optMultiplicar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Multiplicacion"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optDivision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Division"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optExponenciacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Exponenciacion"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optPorcentaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Porcentaje"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optModulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Modulo"
-            android:textColor="#FFFFFF" />
-
-        <RadioButton
-            android:id="@+id/optFactoreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Factoreo "
-            android:textColor="#FFFFFF" />
-    </RadioGroup>
-
-    <Spinner
-        android:id="@+id/cboOperaciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="145dp"
-        android:entries="@array/operaciones"
-        />
-
+        android:layout_marginTop="100dp"
+        android:text="Sensor de Proximidad"
+        android:textColor="@color/colorPrimary"/>
 
 </RelativeLayout>

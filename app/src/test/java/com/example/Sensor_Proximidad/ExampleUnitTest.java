@@ -1,4 +1,4 @@
-package com.example.Conversores;
+package com.example.Sensor_Proximidad;
 
 import org.junit.Test;
 

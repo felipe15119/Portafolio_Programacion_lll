@@ -1,2 +1,2 @@
 # ProgramacionIII
-Codigo de La Calculadora de Programacion Computacional III
+Codigo de La Sensor_Proximidad de Programacion Computacional III
