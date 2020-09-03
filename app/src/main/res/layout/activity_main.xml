@@ -4,46 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-   >
+    tools:context=".MainActivity">
 
     <TabHost
+        android:id="@+id/tbhConvertir1y2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="250dip"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#42A5F5" />
+
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:id="@+id/tab1"
-
+                <RelativeLayout
+                    android:id="@+id/tabUniversal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#BBDEFB"
                     android:orientation="vertical">
 
-                </LinearLayout>
+                    <EditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Cantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
+                    <EditText
+                        android:id="@+id/txtCantidad1"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Unidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
 
-                <LinearLayout
-                    android:id="@+id/tab2"
+                    <EditText
+                        android:id="@+id/txtCantidad2"
+                        android:layout_marginTop="125dp"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Cantidad y unidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tabAreas"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
+                    android:orientation="vertical"
+                    android:background="#BBDEFB">
+                    <TextView
+                        android:id="@+id/lblDeL"
+                        android:text="DE:"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/cboDeL"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:entries="@array/Areas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/lblAL"
+                        android:text="A:"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/cboAL"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="100dp"
+                        android:entries="@array/Areas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
 
             </FrameLayout>
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
         </LinearLayout>
     </TabHost>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="350dp"
+            android:onClick="Calcular"
+            android:text="Calcular"
+            android:textSize="35sp"/>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
