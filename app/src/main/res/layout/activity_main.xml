@@ -60,6 +60,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"/>
+
+                    //agregar un boton
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/tabAreas"
@@ -95,11 +97,16 @@
                         android:entries="@array/Areas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+                    //agregar un edit text y un boton.
                 </RelativeLayout>
 
             </FrameLayout>
         </LinearLayout>
     </TabHost>
+
+
+    //Quitar esto de aqui
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -117,5 +124,5 @@
 
     </RelativeLayout>
 
-
+// hasta aqui
 </RelativeLayout>
