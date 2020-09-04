@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,7 @@ public class MainActivity extends Activity {
             temp2.setText(sb2.toString());
         }
     }
+
 }
 
 
