@@ -1,7 +1,7 @@
 <resources>
         <string name="app_name">Parcial 1</string>
         <string-array name="Areas">
-                <item>Seleccione</item>
+                <item>Seleccione Una Opcion</item>
                 <item>Pie cuadrado</item>
                 <item>Vara cuadrada</item>
                 <item>Yarda cuadrada</item>
