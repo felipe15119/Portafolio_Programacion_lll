@@ -16,4 +16,6 @@
         android:text="Sensor de Proximidad"
         android:textColor="@color/colorPrimary"/>
 
+   
+
 </RelativeLayout>
