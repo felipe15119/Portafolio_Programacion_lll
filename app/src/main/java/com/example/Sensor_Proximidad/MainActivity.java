@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
             }
             @Override
             public void onAccuracyChanged(Sensor sensor, int i) {
-
+/**/
             }
         };
         iniciar();
