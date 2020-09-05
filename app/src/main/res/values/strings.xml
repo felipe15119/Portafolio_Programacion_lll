@@ -1,9 +1,8 @@
 <resources>
-        <string name="app_name">Entre dos activitys</string>
-        <string name="titulo">DETERMINAR SI ES MAYOR DE EDAD</string>
-        <string name="nombre">Escriba su nombre</string>
-        <string name="edad">Escriba su edad</string>
-        <string name="enviarDatos">ENVIAR DATOS</string>
-        <string name="volver">PANTALLA ANTERIOR</string>
+        <string name="app_name">Varias Intent</string>
+        <string name="Nombre">ESCRIBA SU NOMBRE</string>
+        <string name="Enviar">ENVIAR DATOS</string>
+        <string name="MostrarDatos">DATOS RECIBIDOS</string>
+        <string name="Volver">VOLVER</string>
 
 </resources>
