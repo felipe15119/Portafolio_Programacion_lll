@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 
-
+    Conversor conversor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +48,17 @@ public class MainActivity extends Activity {
             temp2.setText(sb2.toString());
         }
     }
-
+    public void Convertir(View v) {
+        this.conversor = new Conversor();
+        int de = ((Spinner) findViewById(R.id.spnDe)).getSelectedItemPosition();
+        int a = ((Spinner) findViewById(R.id.spnA)).getSelectedItemPosition();
+        double cantidad = Double.parseDouble(((TextView) findViewById(R.id.txtcan)).getText().toString());
+        TextView tempVal = (TextView) findViewById(R.id.lblRespuesta);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Respuesta: ");
+        sb.append(this.conversor.convertir_area(de, a, cantidad));
+        tempVal.setText(sb.toString());
+    }
 }
 
 

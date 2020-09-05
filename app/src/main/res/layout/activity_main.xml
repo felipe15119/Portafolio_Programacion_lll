@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="240dp"
                         android:text="Convertir"
-                        android:onClick="convertir"
+                        android:onClick="Convertir"
                         />
 
                 </RelativeLayout>
