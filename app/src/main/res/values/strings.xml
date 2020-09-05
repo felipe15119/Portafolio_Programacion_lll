@@ -1,13 +1,9 @@
 <resources>
-        <string name="app_name">Parcial 1</string>
-        <string-array name="Areas">
-                <item>Seleccione Una Opcion</item>
-                <item>Pie cuadrado</item>
-                <item>Vara cuadrada</item>
-                <item>Yarda cuadrada</item>
-                <item>Metro cuadrado</item>
-                <item>Tareas</item>
-                <item>Manzana</item>
-                <item>Hectáreas</item>
-        </string-array>
+        <string name="app_name">Entre dos activitys</string>
+        <string name="titulo">DETERMINAR SI ES MAYOR DE EDAD</string>
+        <string name="nombre">Escriba su nombre</string>
+        <string name="edad">Escriba su edad</string>
+        <string name="enviarDatos">ENVIAR DATOS</string>
+        <string name="volver">PANTALLA ANTERIOR</string>
+
 </resources>
