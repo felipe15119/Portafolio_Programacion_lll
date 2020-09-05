@@ -1,2 +1,2 @@
 # ProgramacionIII
-Parcial l Programacion lll
+Sensor Acelerometro.
