@@ -4,47 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".Determinar">
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tvTitulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="30sp"
         android:text="@string/titulo"
         android:textSize="24sp" />
-    <EditText
-        android:id="@+id/etNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:hint="@string/nombre"
-        />
-    <EditText
-        android:id="@+id/etEdad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:hint="@string/edad" />
-    <Button
-        android:id="@+id/btEnviarDatos"
+    <TextView
+        android:id="@+id/tvNombreReci"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="30sp"
-        android:text="@string/enviarDatos" />
-    <ImageView
-        android:id="@+id/imageView"
+        android:text=""
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tvEdadReci"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/estudent" />
+        android:paddingTop="30sp"
+        android:text=""
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volver" />
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp" />
 
 
 
 </LinearLayout>
-
