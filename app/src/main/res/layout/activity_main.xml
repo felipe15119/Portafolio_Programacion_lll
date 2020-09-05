@@ -8,41 +8,26 @@ android:orientation="vertical"
     tools:context=".MainActivity"
    >
 
-    <TextView
-        android:id="@+id/tvTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="30sp"
-        android:text="@string/titulo"
-        android:textSize="24sp" />
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:hint="@string/nombre"
+        android:hint="@string/Nombre"
+        android:textStyle="italic"
+        android:layout_marginTop="190dp"
         />
-    <EditText
-        android:id="@+id/etEdad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="20sp"
-        android:hint="@string/edad" />
+
     <Button
-        android:id="@+id/btEnviarDatos"
+        android:id="@+id/btEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30sp"
-        android:text="@string/enviarDatos" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        android:text="@string/Enviar"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        />
+
+
 
 
 </LinearLayout>
