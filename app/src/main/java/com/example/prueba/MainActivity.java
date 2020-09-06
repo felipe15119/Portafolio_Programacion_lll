@@ -1,38 +1,36 @@
 package com.example.prueba;
 
-import android.app.Activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class MainActivity extends Activity {
+import com.google.android.material.snackbar.Snackbar;
+
+public class MainActivity extends AppCompatActivity {
+    ConstraintLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText rNombre = (EditText)findViewById(R.id.etNombre);
-        Button bEnviar = (Button)findViewById(R.id.btEnviar);
+        layout = (ConstraintLayout)findViewById(R.id.activity_main);
 
-        bEnviar.setOnClickListener(new View.OnClickListener() {
+        Button bMostrar =(Button)findViewById(R.id.button);
+
+        Toast.makeText(getApplicationContext(),"Este Es Un Mensaje con Toast",Toast.LENGTH_LONG).show();
+
+        bMostrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String dNombre = rNombre.getText().toString();
-
-                Bundle parametro = new Bundle();
-                parametro.putString("dNombre", dNombre);
-
-                Intent paso = new Intent(MainActivity.this,RecibirDatos.class);
-                paso.putExtras(parametro);
-                startActivity(paso);
+                Snackbar snackbar = Snackbar.make(layout,"Tutorial de Snackbar",Snackbar.LENGTH_LONG);
+                snackbar.show();
             }
         });
-
-
     }
 }
