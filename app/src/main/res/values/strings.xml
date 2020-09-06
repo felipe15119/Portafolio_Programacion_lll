@@ -1,12 +1,4 @@
 <resources>
-        <string name="app_name">Parcial 1</string>
-        <string-array name="Areas">
-                <item>Pie cuadrado</item>
-                <item>Vara cuadrada</item>
-                <item>Yarda cuadrada</item>
-                <item>Metro cuadrado</item>
-                <item>Tareas</item>
-                <item>Manzana</item>
-                <item>Hectáreas</item>
-        </string-array>
+        <string name="app_name">Crear Menú</string>
+
 </resources>
