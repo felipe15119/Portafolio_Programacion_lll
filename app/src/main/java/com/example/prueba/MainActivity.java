@@ -1,40 +1,53 @@
 package com.example.prueba;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button iniciar, parar;
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        iniciar = (Button)findViewById(R.id.btIniciar);
+        parar = (Button)findViewById(R.id.btDetener);
+        mediaPlayer = MediaPlayer.create(this,R.raw.jerry);
+
+                iniciar.setOnClickListener(this);
+        parar.setOnClickListener(this);
+
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu mimenu) {
-        getMenuInflater().inflate(R.menu.menu_principal, mimenu);
-        return true;
+    public void onClick(View view) {
 
+        switch (view.getId()){
+            case R.id.btIniciar:
+                play();
+                break;
+            case R.id.btDetener:
+                stop();
+                break;
+
+        }
+}
+
+    private void play(){
+        mediaPlayer.start();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem opcion_menu) {
-        int id = opcion_menu.getItemId();
-        if (id == R.id.configuracion){
-            Toast.makeText(this,"Opcion de Configuracion", Toast.LENGTH_LONG).show();
-            return true;
-        }
-        if (id== R.id.informacion){
-            Toast.makeText(this, "Opcion de Informacion",Toast.LENGTH_LONG).show();
-            return true;
-        }
-        return super.onOptionsItemSelected(opcion_menu);
-
+    private void stop(){
+        mediaPlayer.stop();
     }
 }
