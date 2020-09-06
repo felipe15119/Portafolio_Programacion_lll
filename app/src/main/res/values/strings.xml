@@ -1,6 +1,5 @@
 <resources>
-        <string name="app_name">Reproducir Música</string>
-        <string name="iniciar">INICIAR</string>
-        <string name="parar">DETENER</string>
+        <string name="app_name">Reproductor de Musica</string>
+
 
 </resources>
