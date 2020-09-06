@@ -1,61 +1,36 @@
 package com.example.prueba;
 
-import android.app.Activity;
+
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.example.prueba.Controlador.PagerController;
-import com.google.android.material.tabs.TabItem;
-import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.snackbar.Snackbar;
 
-
-public class MainActivity extends Activity {
-    TabLayout tabLayout;
-    ViewPager viewPager;
-    TabItem tab1, tab2, tab3;
-
-    PagerController pagerAdapter;
-
+public class MainActivity extends AppCompatActivity {
+    ConstraintLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tabLayout = findViewById(R.id.tablayout);
-        viewPager = findViewById(R.id.viewpager);
-        tab1 = findViewById(R.id.tabcontactos);
-        tab2 = findViewById(R.id.tabcorreos);
-        tab3 = findViewById(R.id.tabmensajes);
+        layout = (ConstraintLayout)findViewById(R.id.activity_main);
 
-        pagerAdapter = new PagerController(getSupportFragmentManager(), tabLayout.getTabCount());
+        Button bMostrar =(Button)findViewById(R.id.button);
 
-        viewPager.setAdapter(pagerAdapter);
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        Toast.makeText(getApplicationContext(),"Este Es Un Mensaje con Toast",Toast.LENGTH_LONG).show();
+
+        bMostrar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-
-                viewPager.setCurrentItem(tab.getPosition());
-
-                if (tab.getPosition() == 0) {
-                    pagerAdapter.notifyDataSetChanged();
-                }
-                if (tab.getPosition() == 1) {
-                    pagerAdapter.notifyDataSetChanged();
-                }
-                if (tab.getPosition() == 2) {
-                    pagerAdapter.notifyDataSetChanged();
-                }
-            }
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
+            public void onClick(View view) {
+                Snackbar snackbar = Snackbar.make(layout,"Tutorial de Snackbar",Snackbar.LENGTH_LONG);
+                snackbar.show();
             }
         });
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 }
