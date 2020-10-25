@@ -5,32 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-   >
+    android:background="@drawable/wallpaper">
+
+    <EditText
+        android:id="@+id/txtBuscarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints"
+        android:hint=" BUSCAR"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"/>
+
+    <ListView
+        android:id="@+id/ltsProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+    </ListView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAgregarbebida"
+        android:id="@+id/btnAgregar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
-        android:src="@android:drawable/ic_input_add"
+        android:src="@drawable/iconoagregar"
         tools:ignore="MissingConstraints" />
-
-    <ListView
-        android:id="@+id/ltsProductosCouchDB"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp" >
-
-    </ListView>
-
-    <EditText
-        android:id="@+id/txtBuscarProducto"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints" />
-
 </RelativeLayout>
 
 
