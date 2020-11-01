@@ -28,7 +28,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_correo"
+            android:id="@+id/txtEmail"
             android:hint="Correo electrónico"
             android:inputType="textEmailAddress"
             android:layout_marginBottom="15dp"
@@ -44,7 +44,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_contrasena"
+            android:id="@+id/txtContraseña"
             android:hint="Contraseña"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
@@ -76,7 +76,7 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/btn_fondo_color"
             android:elevation="5dp"
-            android:text="Inciar sesión"
+            android:text="CREAR CUENTA"
             android:textColor="#fff"
             android:textSize="16sp" />
 
@@ -91,7 +91,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Aún no tienes cuenta?"
+                android:text="¿Ya tienes una cuenta?"
                 android:textSize="16sp"
                 android:textColor="#fff"
                 />
@@ -99,7 +99,7 @@
                 android:id="@+id/btn_ir_crearCuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CREAR CUENTA"
+                android:text="INICIAR SESIÒN"
                 android:background="@android:color/transparent"
                 android:layout_marginLeft="10dp"
                 android:textColor="#fff"/>
