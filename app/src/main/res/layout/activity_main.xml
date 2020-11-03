@@ -15,28 +15,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Ingrese SU Email"
+       android:text="Hola"
+        android:textSize="50dp"
         android:textColorHint="@android:color/black"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="200dp"
         />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Ingrese Una Contraseña"
-        android:textColorHint="@android:color/black"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="270dp"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrar Usuario"
-        android:layout_marginHorizontal="150dp"
-        android:layout_marginVertical="500dp"/>
 </RelativeLayout>
