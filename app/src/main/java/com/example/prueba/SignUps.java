@@ -8,8 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,6 +40,7 @@ public class SignUps extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_ups);
 
+
 //inicializamos el objeto firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -52,7 +56,10 @@ public class SignUps extends AppCompatActivity implements View.OnClickListener {
         //attaching listener to button
         btnRegistrar.setOnClickListener(this);
         btniniciarsesion.setOnClickListener(this);
+
     }
+
+
 
     private void registrarUsuario(){
 

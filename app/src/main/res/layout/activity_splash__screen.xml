@@ -5,15 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash_Screen">
-
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/logo"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/f"
+        android:scaleType="centerCrop"
+        />
 
-    <ImageView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <ImageView
+        android:id="@+id/slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/icon"
@@ -21,6 +36,6 @@
         android:src="@drawable/slogan"
         />
 
-
+    </LinearLayout>
 
 </RelativeLayout>
