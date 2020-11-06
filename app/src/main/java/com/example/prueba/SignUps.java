@@ -26,7 +26,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 
 public class SignUps extends AppCompatActivity implements View.OnClickListener {
-
+///////////////////////////////////////////////////////////////
     private EditText TextEmail;
     private EditText TextPassword;
     private Button btnRegistrar, btniniciarsesion;
