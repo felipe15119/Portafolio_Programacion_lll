@@ -50,7 +50,6 @@ public class SignUps extends AppCompatActivity implements View.OnClickListener {
 
         btnRegistrar = (Button) findViewById(R.id.crear_cuenta);
         btniniciarsesion = (Button) findViewById(R.id.iniciar_sesion1);
-
         progressDialog = new ProgressDialog(this);
 
         //attaching listener to button

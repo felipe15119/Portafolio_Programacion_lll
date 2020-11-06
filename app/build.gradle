@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.prueba"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -27,7 +27,7 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:26.0.0')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.firebase:firebase-auth:20.0.0'
