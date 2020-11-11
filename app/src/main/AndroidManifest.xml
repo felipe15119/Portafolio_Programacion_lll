@@ -11,8 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignUps"/>
-
+        <activity android:name=".VentaNueva"></activity>
+        <activity android:name=".VentaHistorialDetalle" />
+        <activity android:name=".Menu" />
+        <activity android:name=".VentaHistorial" />
+        <activity android:name=".Venta" />
+        <activity android:name=".DetalleProducto" />
+        <activity android:name=".Producto" />
+        <activity android:name=".DetalleCliente" />
+        <activity android:name=".Cliente" />
+        <activity android:name=".SignUps" />
         <activity android:name=".Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

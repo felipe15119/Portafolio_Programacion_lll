@@ -126,7 +126,7 @@ public class SignUps extends AppCompatActivity implements View.OnClickListener {
                         //checking if success
                         if(task.isSuccessful()){//Si el inicio de Sesion es Un Exito---------------------------------------------------------------------------------------------------------------
                             Toast.makeText(SignUps.this, "Bienvenid@: " + TextEmail.getText(), Toast.LENGTH_LONG).show();
-                            Intent intencion = new Intent(getApplication(),MainActivity.class);
+                            Intent intencion = new Intent(getApplication(),Menu.class);
                             startActivity(intencion);
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidUserException) {//Si el Usiario No existe---------------------------------------------------------------------------------------------------------------
