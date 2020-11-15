@@ -11,4 +11,8 @@ public class Cliente extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cliente);
     }
+
+
+
+
 }

@@ -28,7 +28,6 @@ public class Splash_Screen extends AppCompatActivity {
         sloganview.setAnimation(animacion1);
 
 
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -36,7 +35,6 @@ public class Splash_Screen extends AppCompatActivity {
                 finish();
             }
         }, 5000);
-
 
     }
 }
