@@ -32,7 +32,7 @@ public class VentaHistorialItemRecycler extends RecyclerView.Adapter<VentaHistor
 
     @Override
     public void onBindViewHolder(@NonNull VentaHistorialItemRecycler.ViewHolderVentaHistorial holder, int position) {
-        holder.bind(listaCabecera.get(position), itemClickListener);
+        holder.bind(listaCabecera.get(position), (ClienteItemRecycler.OnItemClickListener) itemClickListener);
     }
 
     public interface OnItemClickListener{
@@ -43,6 +43,7 @@ public class VentaHistorialItemRecycler extends RecyclerView.Adapter<VentaHistor
     @Override
     public int getItemCount() {
         listaCabecera.size();
+        return 0;
     }
 
     class ViewHolderVentaHistorial extends RecyclerView.ViewHolder{

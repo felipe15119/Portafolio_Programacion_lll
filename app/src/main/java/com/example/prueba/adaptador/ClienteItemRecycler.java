@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.prueba.R;
 import com.example.prueba.data.modelo.Cliente;
+import com.example.prueba.data.modelo.VentaCabecera;
+
 import java.util.List;
 
 public class ClienteItemRecycler extends RecyclerView.Adapter<ClienteItemRecycler.ViewHolderCliente>{
@@ -22,7 +24,7 @@ public class ClienteItemRecycler extends RecyclerView.Adapter<ClienteItemRecycle
     }
 
     public interface OnItemClickListener{
-        void onItemClick(Cliente cliente, int position);
+        void onItemClick(VentaCabecera cliente, int position);
     }
 
     @NonNull
