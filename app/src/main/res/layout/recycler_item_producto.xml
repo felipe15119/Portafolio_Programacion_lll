@@ -40,7 +40,7 @@
 
                 <TextView
                     android:gravity="center"
-                    android:text="@string/precio_item"
+                    android:text="Precio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
