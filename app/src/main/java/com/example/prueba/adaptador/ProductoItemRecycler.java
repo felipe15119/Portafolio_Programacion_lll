@@ -49,13 +49,11 @@ public class ProductoItemRecycler extends RecyclerView.Adapter<ProductoItemRecyc
     }
 
     class ViewHolderProducto extends RecyclerView.ViewHolder{
-        CircleImageView imagen;
         TextView nombre, precio;
         LinearLayout llSeleccion;
 
         public ViewHolderProducto(View itemView) {
             super(itemView);
-            imagen = itemView.findViewById(R.id.ripCivImagen);
             nombre = itemView.findViewById(R.id.ripTvNombre);
             precio = itemView.findViewById(R.id.ripTvPrecio);
             llSeleccion = itemView.findViewById(R.id.ripLLItemSeleccionado);
@@ -65,17 +63,6 @@ public class ProductoItemRecycler extends RecyclerView.Adapter<ProductoItemRecyc
             nombre.setText(producto.getProd_nombre());
             precio.setText(String.valueOf(producto.getProd_precio()));
 
-            llSeleccion.setBackground(ContextCompat.getDrawable(context, producto.getProd_seleccionado() ? R.color.productoSeleccion : R.color.blanco));
-
-            if (producto.getProd_ruta_foto().length() <= 1 || producto.getProd_ruta_foto().isEmpty()){
-                Picasso.get().load(R.drawable.caja).into(imagen);
-            }else {
-                Picasso.get().load(producto.getProd_ruta_foto())
-                        .resize(65,65)
-                        .error(R.drawable.caja)
-                        .centerCrop()
-                        .into(imagen);
-            }
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

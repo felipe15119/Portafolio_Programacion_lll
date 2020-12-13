@@ -89,15 +89,6 @@ public class VentaItemRecycler extends RecyclerView.Adapter<VentaItemRecycler.Vi
             totalProducto.setText(String.valueOf(productoVenta.getProd_precio()));
             nombre.setText(productoVenta.getProd_nombre());
 
-            if (productoVenta.getProd_ruta_foto().length() < 0 || productoVenta.getProd_ruta_foto().isEmpty()){
-                Picasso.get().load(R.drawable.caja).into(imagen);
-            }else {
-                Picasso.get().load(productoVenta.getProd_ruta_foto())
-                        .error(R.drawable.caja)
-                        .centerCrop()
-                        .resize(65,65)
-                        .into(imagen);
-            }
         }
     }
 

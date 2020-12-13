@@ -63,7 +63,7 @@ public class ClienteItemRecycler extends RecyclerView.Adapter<ClienteItemRecycle
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    itemClickListener.onItemClick(cliente, getAdapterPosition());
+                    //itemClickListener.onItemClick(cliente, getAdapterPosition());
                 }
             });
         }
