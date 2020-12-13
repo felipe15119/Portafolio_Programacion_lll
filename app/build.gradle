@@ -5,6 +5,16 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
+    buildscript {
+        repositories {
+            mavenCentral()
+            google()
+        }
+        dependencies {
+            classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.prueba"
         minSdkVersion 16
@@ -42,4 +52,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 
     implementation 'com.google.firebase:firebase-analytics'
+
+    apply plugin: 'com.android.library'
+    apply plugin: 'com.jakewharton.butterknife'
+
+
 }
