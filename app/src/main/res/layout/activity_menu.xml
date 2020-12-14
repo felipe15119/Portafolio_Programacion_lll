@@ -7,13 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu"
-    android:background="@drawable/back">
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="175dp"
-        android:background="@drawable/logic"/>
+    android:background="@color/PLight">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -23,20 +17,20 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1">
+            android:weightSum="0.5">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/Yelow">
                 <ImageButton
                     android:id="@+id/amIbCliente"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/back"
+                    android:background="@color/white"
                     android:src="@drawable/cliente"
                     android:onClick="Cliente"/>
                 <TextView
@@ -49,20 +43,26 @@
                     android:textStyle="bold"
                     android:textSize="20dp"/>
             </LinearLayout>
+        </TableRow>
 
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="0.5">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/Yelow">
                 <ImageButton
                     android:id="@+id/amIbMensajes"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/back"
+                    android:background="@color/white"
                     android:src="@drawable/email"
                     android:onClick="Mensaje"/>
                 <TextView
@@ -81,20 +81,20 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1">
+            android:weightSum="0.5">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/Yelow">
                 <ImageButton
                     android:id="@+id/amIbProducto"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/back"
+                    android:background="@color/white"
                     android:src="@drawable/caja"
                     android:onClick="Producto"/>
                 <TextView
@@ -107,20 +107,26 @@
                     android:textStyle="bold"
                     android:textSize="20dp"/>
             </LinearLayout>
+        </TableRow>
 
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="0.5">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/Yelow">
                 <ImageButton
                     android:id="@+id/amIbVenta"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/back"
+                    android:background="@color/white"
                     android:src="@drawable/venta"
                     android:onClick="Ventas"/>
                 <TextView
@@ -146,13 +152,13 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/Yelow">
                 <ImageButton
                     android:id="@+id/amIbVentaHistorial"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@drawable/back"
+                    android:background="@color/white"
                     android:src="@drawable/historial"
                     android:onClick="Historial"/>
                 <TextView
